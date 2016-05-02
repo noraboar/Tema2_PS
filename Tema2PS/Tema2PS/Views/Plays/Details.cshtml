@@ -1,0 +1,50 @@
+﻿@model Tema2PS.Models.PlayModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PlayModel</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.distribution)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.distribution)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.directedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.directedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.premiereDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.premiereDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PlayModelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,42 @@
+﻿@model Tema2PS.Models.TicketModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TicketModel</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.row)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.row)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.place)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.place)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TicketModelId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
